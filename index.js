@@ -160,11 +160,18 @@ DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem.
 
 hint - you can use the .includes method to help you solve this */
 
-function filterByWord(/*code here*/){
+function filterByWord(arr, string){
 
-    /*code here*/
+    let specialArr = [];
+    for(i=0; i<originalFlavors.length; ++i){
+        if(arr[i].includes(string)){
+            specialArr.push(arr[i]);
+        }
+    } return specialArr;
 
 }
+
+     console.log(filterByWord(originalFlavors, "Chocolate"));
 
 
 
